@@ -1,0 +1,77 @@
+/* Header Styles */
+header {
+  background-color: #f8f9fa;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px; /* Adjust the top margin here */
+}
+
+.brand-youtube {
+  color: #dd2929 !important;
+}
+
+.brand-interact {
+  color: #4240dc !important;
+}
+
+/* Form Styles */
+.form-input {
+  margin: 5px 0; /* Adjust the margin here */
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px outset #8b8eaf;
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0; /* Adjust the margin here */
+  border: 2px solid #4240dc;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+/* Main Content Styles */
+.video-player-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid #ddd; /* Placeholder border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Placeholder box shadow */
+  margin-top: auto; /* Adjust the top margin here */
+}
+
+.video-player-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.webcam-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #ddd; /* Placeholder border */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Placeholder box shadow */
+  transition: transform 0.3s ease-in-out;
+}
+
+.webcam-image:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+

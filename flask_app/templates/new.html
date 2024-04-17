@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gesture-based YouTube Control</title>
+</head>
+<body>
+    <h1>Gesture-based YouTube Control</h1>
+
+    <div>
+        <h2>YouTube Video</h2>
+        <iframe id="youtube-video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div>
+        <h2>Camera Feed</h2>
+        <video id="camera-feed" width="320" height="240" autoplay></video>
+    </div>
+
+    <script>
+        // Fetch the YouTube video link from the backend API
+        fetch('/api/get_youtube_link')
+            .then(response => response.json())
+            .then(data => {
+                const youtubeVideo = document.getElementById('youtube-video');
+                youtubeVideo.src = data.link;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+
+        // Access the camera feed using getUserMedia API
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then(stream => {
+                const cameraFeed = document.getElementById('camera-feed');
+                cameraFeed.srcObject = stream;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    </script>
+</body>
+</html>

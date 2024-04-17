@@ -1,0 +1,6 @@
+0 Play
+1 Pause
+2 ytvolup
+3 ytvoldown
+4 backward
+5 forward
