@@ -1,6 +1,4 @@
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,15 +15,14 @@
     <title>Demo</title>
 </head>
 <body>
-
-    <header class="py-3 mb-3">
+    <header class="py-3 mb-1">
         <div class="h-100 d-flex align-items-center justify-content-center">
             <h2><span class="ytb">YouTube-Gesture</span>-<span class="inter">Akanksha Raj</span></h2>
         </div>
     </header>
 
     <section>
-        <div class="container my-3 py-3">
+        <div class="container my-1 py-3">
             <form method = 'post' class="row g-3">
                 <div class="col-9">
                   <input type="text" class="form-input" placeholder="Youtube video link" aria-label="link" name="link" required>
@@ -39,14 +36,14 @@
     </section>
     <main>
         {% if video_id %}
-            <div class="container-fluid h-100 pt-3">
-                <div class="row h-100">
+            <div class="container-fluid h-70 pt-3">
+                <div class="row h-70 shiftmiddle">
                     {% if error_message %}
                         <div class="alert alert-danger" role="alert">
                             {{ error_message }}
                         </div>
                     {% endif %}
-                    <div class="col-lg-9 col-md-12">
+                    <div class="col-md-7">
                         <div class="video-player-container">
                             <div id="player" class="video-player" title="{{video_id}}"></div>
                         </div>

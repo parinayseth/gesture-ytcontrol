@@ -8,7 +8,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 5px; /* Adjust the top margin here */
+  margin-top: 3px; /* Adjust the top margin here */
 }
 
 .brand-youtube {
@@ -21,7 +21,7 @@ header {
 
 /* Form Styles */
 .form-input {
-  margin: 5px 0; /* Adjust the margin here */
+  margin: 3px 0; /* Adjust the margin here */
   width: 100%;
   padding: 10px;
   border-radius: 5px;
@@ -33,7 +33,7 @@ header {
 .btn {
   width: 100%;
   padding: 10px;
-  margin: 5px 0; /* Adjust the margin here */
+  margin: 3px 0; /* Adjust the margin here */
   border: 2px solid #4240dc;
   border-radius: 5px;
   font-size: 1rem;
@@ -44,13 +44,12 @@ header {
 /* Main Content Styles */
 .video-player-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%; 
   height: 0;
   overflow: hidden;
   border-radius: 5px;
   border: 1px solid #ddd; /* Placeholder border */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Placeholder box shadow */
-  margin-top: auto; /* Adjust the top margin here */
 }
 
 .video-player-container iframe {
@@ -73,5 +72,12 @@ header {
 
 .webcam-image:hover {
   transform: scale(1.05); /* Zoom effect on hover */
+}
+.shiftmiddle{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
