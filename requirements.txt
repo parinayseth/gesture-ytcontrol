@@ -45,3 +45,4 @@ typing_extensions==4.3.0
 urllib3==1.26.12
 Werkzeug==2.2.2
 tensorflow==2.12.0
+cvzone==1.6.1
