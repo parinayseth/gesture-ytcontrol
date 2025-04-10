@@ -38,9 +38,6 @@ def demo():
     else:
         return render_template('demo.html')
 
-
-
-# access youtube video info
 @app.route('/video_info', methods=['POST'])
 def get_video_info():
     output = request.get_json()
@@ -49,9 +46,6 @@ def get_video_info():
     return ''
 
 
-
-
-# serve webcam video
 @app.route('/webcam')
 def stream_video():
    
